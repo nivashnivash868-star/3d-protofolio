@@ -273,7 +273,7 @@ window.addEventListener("touchend", onDragEnd);
 // Smooth Section Reveal Animations (IntersectionObserver)
 function initScrollReveal() {
     const revealElements = document.querySelectorAll(
-        ".hero-content, .section-header, .glass-card, .skill-card, .project-card, .contact-card"
+        ".hero-content, .section-header, .glass-card, .skill-card, .project-card, .contact-card, .social-card"
     );
 
     const observer = new IntersectionObserver((entries) => {
