@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nivash - Cyber Security & Technology Portfolio">
+    <title>Nivash | Cyber Security & Technology Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==========================================
+         BACKGROUND 3D SCENE & AMBIENT GLOW
+    =========================================== -->
+    <div class="bg-scene-container" id="bgSceneContainer">
+        <div class="ambient-glow glow-cyan"></div>
+        <div class="ambient-glow glow-indigo"></div>
+        <div class="ambient-glow glow-purple"></div>
+        <div class="ambient-glow glow-center"></div>
+        <div class="cyber-grid"></div>
+
+        <!-- Fixed 3D Character Background Scene -->
+        <div class="background-3d-wrapper">
+            <canvas id="characterCanvas"></canvas>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         NAVIGATION
+    =========================================== -->
+    <header class="navbar">
+        <a href="#home" class="logo">
+            <div class="logo-icon">N</div>
+            <span>Nivash<span class="dot">.</span></span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="nav-cta">
+            <button class="theme-toggle-btn" id="themeToggle" title="Toggle Light / Dark Theme" aria-label="Toggle theme">
+                <svg class="sun-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                <svg class="moon-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+            <a href="mailto:nivashnivash868@gmail.com" class="nav-button">
+                <span>Let's Talk</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </a>
+        </div>
+    </header>
+
+    <!-- ==========================================
+         MAIN CONTENT OVERLAY
+    =========================================== -->
+    <main class="page-content">
+
+        <!-- HERO SECTION -->
+        <section class="hero-section" id="home">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="status-pulse"></span>
+                    <span>AVAILABLE FOR PROJECTS & SECURITY AUDITS</span>
+                </div>
+
+                <p class="eyebrow">HELLO, I'M</p>
+                <h1 class="hero-title">
+                    Nivash<span class="gradient-accent">.</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    Cyber Security <br>
+                    <strong class="gradient-text">& Technology Enthusiast</strong>
+                </h2>
+
+                <p class="hero-description">
+                    I build technology-driven solutions combining cybersecurity, 
+                    artificial intelligence, software development, and modern web architectures.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                    </a>
+                    <a href="mailto:nivashnivash868@gmail.com" class="btn btn-secondary">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <span>nivashnivash868@gmail.com</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section class="content-section" id="about">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-num">01</span>
+                    <div class="section-title-wrap">
+                        <p class="section-tag">ABOUT ME</p>
+                        <h2>Turning ideas into <span class="gradient-text">technology.</span></h2>
+                    </div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="glass-card about-card highlight-card">
+                        <div class="card-glow-accent"></div>
+                        <p class="large-text">
+                            I'm a technology-focused student interested in cybersecurity, 
+                            artificial intelligence, software development, and emerging technologies.
+                        </p>
+                        <div class="quick-stats">
+                            <div class="stat-item">
+                                <span class="stat-num">3+</span>
+                                <span class="stat-label">Core Projects</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-num">AI & ML</span>
+                                <span class="stat-label">Specialization</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-num">Security</span>
+                                <span class="stat-label">Focus Area</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card about-card text-card">
+                        <p>
+                            I enjoy building practical projects, participating in hackathons, 
+                            and exploring how modern systems, protocols, and intelligent agents work.
+                        </p>
+                        <p>
+                            My goal is to become a strong cybersecurity professional while continuing 
+                            to develop high-impact software combining AI, cryptography, and modern engineering.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section class="content-section" id="skills">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-num">02</span>
+                    <div class="section-title-wrap">
+                        <p class="section-tag">SKILLS & TOOLKIT</p>
+                        <h2>Technologies <span class="gradient-text">I work with.</span></h2>
+                    </div>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="glass-card skill-card">
+                        <div class="skill-top">
+                            <span class="skill-code">01</span>
+                            <div class="skill-icon-wrap cyan">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                            </div>
+                        </div>
+                        <h3>Cyber Security</h3>
+                        <p>Security fundamentals, network analysis, vulnerability assessment, and threat mitigation.</p>
+                    </div>
+
+                    <div class="glass-card skill-card">
+                        <div class="skill-top">
+                            <span class="skill-code">02</span>
+                            <div class="skill-icon-wrap indigo">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                            </div>
+                        </div>
+                        <h3>Python</h3>
+                        <p>Automation scripting, AI integration, data processing, backend services, and computer vision.</p>
+                    </div>
+
+                    <div class="glass-card skill-card">
+                        <div class="skill-top">
+                            <span class="skill-code">03</span>
+                            <div class="skill-icon-wrap purple">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                            </div>
+                        </div>
+                        <h3>Java</h3>
+                        <p>Object-oriented programming, robust application architecture, and algorithm design.</p>
+                    </div>
+
+                    <div class="glass-card skill-card">
+                        <div class="skill-top">
+                            <span class="skill-code">04</span>
+                            <div class="skill-icon-wrap amber">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                            </div>
+                        </div>
+                        <h3>JavaScript</h3>
+                        <p>Interactive web interfaces, asynchronous frontend logic, Canvas rendering, and UI animations.</p>
+                    </div>
+
+                    <div class="glass-card skill-card">
+                        <div class="skill-top">
+                            <span class="skill-code">05</span>
+                            <div class="skill-icon-wrap emerald">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+                            </div>
+                        </div>
+                        <h3>AI / ML</h3>
+                        <p>Computer vision, optical character recognition (OCR), NLP, and assistive smart agents.</p>
+                    </div>
+
+                    <div class="glass-card skill-card">
+                        <div class="skill-top">
+                            <span class="skill-code">06</span>
+                            <div class="skill-icon-wrap rose">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+                            </div>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>Modern HTML5, responsive CSS3 architectures, dark glassmorphism, and performance optimization.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section class="content-section" id="projects">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-num">03</span>
+                    <div class="section-title-wrap">
+                        <p class="section-tag">FEATURED WORK</p>
+                        <h2>Things I've <span class="gradient-text">built.</span></h2>
+                    </div>
+                </div>
+
+                <div class="projects-list">
+                    <article class="glass-card project-card">
+                        <div class="project-header">
+                            <span class="project-code">PROJECT // 01</span>
+                            <span class="project-tag">Computer Vision / Robotics</span>
+                        </div>
+                        <div class="project-content">
+                            <h3>VISTA</h3>
+                            <p>Vision-based autonomous robotic system engineered for real-time object recognition, spatial mapping, navigation, and dynamic obstacle avoidance.</p>
+                        </div>
+                        <div class="project-footer">
+                            <div class="tech-stack">
+                                <span>Python</span>
+                                <span>OpenCV</span>
+                                <span>AI Navigation</span>
+                            </div>
+                            <div class="project-arrow">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="glass-card project-card">
+                        <div class="project-header">
+                            <span class="project-code">PROJECT // 02</span>
+                            <span class="project-tag">Assistive AI / NLP</span>
+                        </div>
+                        <div class="project-content">
+                            <h3>VisionVoice</h3>
+                            <p>AI-powered assistive reading system integrating OCR text recognition, natural language processing, and seamless text-to-speech conversion for accessibility.</p>
+                        </div>
+                        <div class="project-footer">
+                            <div class="tech-stack">
+                                <span>OCR</span>
+                                <span>NLP</span>
+                                <span>Speech Synthesis</span>
+                            </div>
+                            <div class="project-arrow">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="glass-card project-card">
+                        <div class="project-header">
+                            <span class="project-code">PROJECT // 03</span>
+                            <span class="project-tag">IoT / Smart Automation</span>
+                        </div>
+                        <div class="project-content">
+                            <h3>Smart Building Energy</h3>
+                            <p>IoT-based energy monitoring, automated power consumption analysis, and intelligent appliance scheduling to optimize electrical efficiency.</p>
+                        </div>
+                        <div class="project-footer">
+                            <div class="tech-stack">
+                                <span>IoT Sensors</span>
+                                <span>Telemetry</span>
+                                <span>Automation</span>
+                            </div>
+                            <div class="project-arrow">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="content-section contact-section" id="contact">
+            <div class="section-container">
+                <div class="contact-card glass-card">
+                    <div class="card-glow-accent"></div>
+                    <span class="section-tag">GET IN TOUCH</span>
+                    <h2>Let's build something <span class="gradient-text">extraordinary.</span></h2>
+                    <p class="contact-subtext">Have a question, security audit proposal, or collaboration opportunity? Feel free to reach out directly.</p>
+
+                    <!-- Email Box with Copy Feature -->
+                    <div class="email-box-wrapper">
+                        <div class="email-box">
+                            <div class="email-info">
+                                <div class="email-icon">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                </div>
+                                <span class="email-address" id="emailText">nivashnivash868@gmail.com</span>
+                            </div>
+                            <div class="email-actions">
+                                <button class="copy-btn" id="btnCopyEmail" title="Copy email to clipboard">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                    <span id="copyBtnLabel">Copy</span>
+                                </button>
+                                <a href="mailto:nivashnivash868@gmail.com" class="direct-mail-btn" title="Send Email">
+                                    <span>Send Message</span>
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <footer class="portfolio-footer">
+                        <p>© 2026 Nivash • Built with modern 3D & Cyber Security passion.</p>
+                        <a href="#home" class="back-to-top">Back to top ↑</a>
+                    </footer>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
